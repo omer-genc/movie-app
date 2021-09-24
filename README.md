@@ -1,4 +1,4 @@
-# Movie App - [Link]()
+# Movie App - [Link](https://relaxed-shirley-8dff65.netlify.app)
 
 ## About project
 This project use `fetch api` for querying and listing movie from [themoviedb](api.themoviedb.org).
