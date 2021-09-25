@@ -1,0 +1,28 @@
+{
+  "name": "movie-app",
+  "version": "1.0.0",
+  "description": "This project use `fetch api` for querying and listing movie from [themoviedb](api.themoviedb.org).",
+  "main": "script.js",
+  "scripts": {
+    "test": "node script.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/omer-genc/movie-app.git"
+  },
+  "keywords": [
+    "movie",
+    "themoviedb",
+    "javascript",
+    "api"
+  ],
+  "author": "omer-genc <omergnc1@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/omer-genc/movie-app/issues"
+  },
+  "homepage": "https://github.com/omer-genc/movie-app#readme",
+  "dependencies": {
+    "axiom": "^0.1.6"
+  }
+}
