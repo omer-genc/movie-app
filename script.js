@@ -4,8 +4,9 @@ const API_URL = MAIN_URL + "/discover/movie?" + API_KEY;
 const IMG_URL = 'http://image.tmdb.org/t/p/w500';
 const SEARCH_URL = MAIN_URL + "/search/movie?" + API_KEY;
 
-getMovie(API_URL)
 
+/*  
+// Typ 1
 function getMovie(api_url) {
     fetch(api_url)
         .then(response =>
@@ -16,6 +17,18 @@ function getMovie(api_url) {
                 displayMovie(movieJSON))
         })
 }
+getMovie(API_URL)
+
+*/
+
+async function getMovie(api_url) {
+    const data = await (await fetch(api_url)).json()
+    document.querySelector("#movie-area").innerHTML = "" //clear before display
+    data.results.forEach(movieData =>
+        displayMovie(movieData))
+
+}
+getMovie(API_URL)
 
 
 function displayMovie(movieJSON) {
